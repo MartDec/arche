@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
+
+:root {
+    --textFont: 'Josefin Sans';
+    --titleFont: 'Yeseva One';
+    --white: #F3F3F3;
+    --black: #1C1C1C;
+    --red: #B93533;
+    --grey: #B7B7B7;
+    --box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.4);
+}
+
+html, body, #app {
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+    height: 100vh;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  position: relative;
+}
+
+#app.overflow-hidden {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--titleFont)
+}
+
+* {
+    font-family: var(--textFont);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--red);
+    overflow: hidden;
+}
+
+a img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 1s cubic-bezier(.29,0,.35,.99);
+    transition: 1s cubic-bezier(.29,0,.35,.99);
+}
+
+a img:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.material-icons {
+    color: var(--black);
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.d-none {
+    display: none;
+}
